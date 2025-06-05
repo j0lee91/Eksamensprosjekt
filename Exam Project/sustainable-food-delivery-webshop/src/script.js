@@ -1,11 +1,11 @@
-// This file contains JavaScript code for interactivity, including form validation and API integration.
+
 
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('form'); // Assuming there's a form in your HTML
-    const chatbotButton = document.getElementById('chatbot-button'); // Assuming there's a button for the chatbot
-    const chatbotContainer = document.getElementById('chatbot-container'); // Assuming there's a container for the chatbot
+    const form = document.querySelector('form'); 
+    const chatbotButton = document.getElementById('chatbot-button'); 
+    const chatbotContainer = document.getElementById('chatbot-container'); 
 
-    // Add ARIA attributes for accessibility
+    
     if (chatbotButton) {
         chatbotButton.setAttribute('aria-controls', 'chatbot-container');
         chatbotButton.setAttribute('aria-expanded', chatbotContainer.classList.contains('active') ? 'true' : 'false');
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         chatbotContainer.setAttribute('aria-label', 'FRAM AI Chatbot');
     }
 
-    // Form validation
+    
     form.addEventListener('submit', (event) => {
         event.preventDefault();
         const inputs = form.querySelectorAll('input, textarea');
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         inputs.forEach(input => {
             if (!input.value.trim()) {
                 valid = false;
-                input.classList.add('error'); // Add error class for styling
+                input.classList.add('error'); 
                 input.setAttribute('aria-invalid', 'true');
             } else {
                 input.classList.remove('error');
@@ -35,22 +35,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (valid) {
-            // Handle form submission
+            
             console.log('Form submitted successfully!');
-            // You can add your form submission logic here
+            
         }
     });
 
-    // Chatbot functionality
     chatbotButton.addEventListener('click', () => {
-        chatbotContainer.classList.toggle('active'); // Toggle visibility of the chatbot
+        chatbotContainer.classList.toggle('active'); 
         chatbotButton.setAttribute('aria-expanded', chatbotContainer.classList.contains('active') ? 'true' : 'false');
         if (chatbotContainer.classList.contains('active')) {
             chatbotContainer.focus();
         }
     });
 
-    // Chatbot form submission with error handling
     const chatbotForm = document.getElementById('ai-chatbot-form');
     const chatbotInput = document.getElementById('ai-chatbot-input');
     const chatbotMessages = document.getElementById('ai-chatbot-messages');
@@ -68,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const userMessage = chatbotInput.value.trim();
             if (!userMessage) return;
 
-            // Display user message
             const userMsgDiv = document.createElement('div');
             userMsgDiv.className = 'ai-message ai-user';
             userMsgDiv.textContent = userMessage;
@@ -78,7 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
             chatbotInput.value = '';
             chatbotInput.disabled = true;
 
-            // Show loading indicator
             const loadingDiv = document.createElement('div');
             loadingDiv.className = 'ai-message ai-bot ai-bot-loading';
             loadingDiv.textContent = '...';
@@ -109,7 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Close chatbot with ARIA
     if (closeChatbotBtn && chatbotContainer) {
         closeChatbotBtn.setAttribute('aria-label', 'Close chat');
         closeChatbotBtn.addEventListener('click', () => {
@@ -119,7 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Example function to call OpenAI API
     async function callOpenAI(prompt) {
         const response = await fetch('https://api.openai.com/v1/engines/davinci-codex/completions', {
             method: 'POST',

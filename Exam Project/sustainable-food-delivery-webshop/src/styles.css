@@ -299,7 +299,7 @@ nav ul li a {
     border: solid 1px #0B0A08;
 }
 
-/* ===== How-To Section Layout (info-main on the left, info-cards on the right) ===== */
+
 .how-to .info-layout {
     display: flex;
     flex-direction: row;
@@ -313,11 +313,11 @@ nav ul li a {
     order: 1;
     flex: 0 0 33.33%;
     display: flex;
-    align-items: center;      /* vertical center */
-    justify-content: flex-start; /* align to left horizontally */
+    align-items: center;      
+    justify-content: flex-start; 
     text-align: left;
-    padding-left: 32px;       /* add some left padding */
-    padding-top: 200px;        /* add some top padding */
+    padding-left: 32px;       
+    padding-top: 200px;        
     background: transparent;
     box-sizing: border-box;
     height: 100%;
@@ -392,8 +392,9 @@ nav ul li a {
     letter-spacing: 1px;
     padding-left: 45px;
     padding-top: 90px;
-    margin-left: 0; /* or your alignment value */
+    margin-left: 0; 
 }
+
 .popular-subtitle {
     font-family: 'Arimo', Arial, sans-serif;
     font-size: 20px;
@@ -401,10 +402,9 @@ nav ul li a {
     width: 591px;
     height: 95px;
     margin-left: 0; 
-    padding-left: 45px;/* Align with .popular-title */
+    padding-left: 45px;
     display: flex;
-    align-items: center; /* Vertically center text if needed */
-    /* Optional: adjust margin-top for spacing under the title */
+    align-items: center; 
 }
 .popular-cards-row {
     display: flex;
