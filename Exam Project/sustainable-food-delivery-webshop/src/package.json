@@ -1,5 +1,5 @@
 {
-  "name": "sustainable-food-delivery-webshop",
+  "name": "FRAM-Webshop",
   "version": "1.0.0",
   "description": "A responsive and accessible webshop for sustainable food delivery.",
   "main": "src/index.html",
@@ -11,10 +11,10 @@
   "keywords": [
     "food",
     "delivery",
-    "sustainable",
+    "produce",
     "webshop"
   ],
-  "author": "Your Name",
+  "author": "Julie Aase",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",

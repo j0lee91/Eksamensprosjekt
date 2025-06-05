@@ -1,50 +1,51 @@
-# Sustainable Food Delivery Webshop
+# EXAM PROJECT PRO1001 2025
 
-## Overview
-The Sustainable Food Delivery Webshop is an interactive website designed to provide users with a seamless experience in ordering fresh, locally sourced meals delivered to their door. The project focuses on responsiveness, accessibility, and performance, ensuring that all users can navigate and utilize the site effectively.
+A responsive web application for ordering sustainable, local produce. This is an assignment for the exam project gived by Oslos Nye Fagskole. I have tried to the best of my abilty to make this webshop as close to the brief as i could in design and functionality. 
 
-## Project Structure
-```
-sustainable-food-delivery-webshop
-├── src
-│   ├── index.html          # Main entry point for the website
-│   ├── styles
-│   │   └── main.css       # CSS styles for the website
-│   ├── scripts
-│   │   └── script.js      # JavaScript for interactivity
-│   ├── assets             # Directory for fonts, SVGs, and images
-│   └── components         # Optional: reusable HTML snippets
-├── package.json           # Configuration file for npm
-└── README.md              # Project documentation
-```
+## Table of Contents
+- [Setup](#setup)
+- [Usage](#usage)
+- [Features](#features)
+- [Configuration](#configuration)
+- [Accessibility](#accessibility)
+- [Error Handling](#error-handling)
+- [License](#license)
+- [Contact](#contact)
+
+
+## Setup
+1. Clone the repository:
+   ```sh
+   git clone <repository-url>
+
+## Usage
+- Browse and order seasonal produce.
+- Use the chatbot for help or questions.
+- Explore partner locations on the interactive map.
 
 ## Features
-- **Responsive Design**: The website is built using CSS flexbox and grid to ensure it looks great on all devices.
-- **Accessibility**: Semantic HTML elements are used throughout the site to enhance accessibility for all users.
-- **Interactivity**: JavaScript is utilized for client-side form validation and to integrate an AI-powered chatbot using the OpenAI API.
-- **Performance**: The website is optimized for fast loading times and efficient API calls.
+- Fully responsive design for all devices
+- Accessible navigation and chatbot (ARIA attributes)
+- MapTiler map integration with error handling
+- Newsletter signup form
+- Shopping cart functionality, sort of.
 
-## Setup Instructions
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```
-   cd sustainable-food-delivery-webshop
-   ```
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Open `src/index.html` in your web browser to view the project.
+## Configuration
+- Add your MapTiler API key in `script.js`
+- Add your OpenAI API key in `script.js` for chatbot functionality
 
-## Design Choices
-- The design is based on a Figma prototype, ensuring a visually appealing and user-friendly interface.
-- Accessibility standards were prioritized to make the website usable for individuals with disabilities.
+## Accessibility
+- ARIA attributes implemented for navigation, chatbot, and forms
+- Keyboard navigation supported
 
-## Contributing
-Contributions are welcome! Please submit a pull request or open an issue for any suggestions or improvements.
+## Error Handling
+- User-friendly error messages for all API/network issues
+- Form validation with accessible feedback
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+[MIT](LICENSE)
+
+## Contact
+Julie Aase - julie.aase@hotmail.com
+
+---
