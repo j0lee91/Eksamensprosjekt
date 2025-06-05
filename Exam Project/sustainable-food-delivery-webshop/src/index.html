@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="styles.css">
+    <title>Fram-Sustainable food delivery</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li style="position: relative;">
+                    <a href="#" id="menu-toggle">
+                        <img src="menysmall.png" id="menu" alt="Menu">
+                    </a>
+                    <div id="dropdown-menu" class="dropdown-menu">
+                        <button class="close-btn" id="close-menu" aria-label="Close menu">&times;</button>
+                        <div class="dropdown-menu-links">
+                            <a href="product.html">PRODUCTS</a>
+                            <a href="chat.html">CHAT</a>
+                        </div>
+                        <a href="/cart" class="checkout-link">CHECKOUT</a>
+                    </div>
+                </li>
+                <li><a href="index.html">FRAM</a></li>
+                <li>
+                    <a href="/cart">
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="hero-bg-wrapper">
+        <img src="Header.jpg" alt="Background" class="hero-bg-img">
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="main-content">
+                <h1 id="logo">FRAM</h1>
+                <div class="vertical-line"></div>
+                <h2>HOME DELIVERY FROM<br>YOUR LOCAL FARMS</h2>
+            </div>
+        </section> <!--/hero-->
+
+        <div class="main-white-bg">
+            <section class="seasonal-products-section">
+                <div class="cards-row">
+                    <div id="selection" class="card">
+                        <h2>SHOP OUR SEASONAL SELECTION</h2>
+                        <h3>Updated every week</h3>
+                        <img src="Veggies.jpg" alt="Seasonal Vegetables" class="seasonal-image">
+                        <h3>New produce is added continuously as time goes by and the seasons change.</h3>
+                        <button class="button" onclick="window.location.href='product.html'">Browse our selection</button>
+                        <div class="product-grid">
+                            <div class="product"></div>
+                        </div>
+                    </div>
+                    <div class="cards-divider"></div>
+                    <div id="chat" class="card">
+                        <h2>ASK US ABOUT<br>ANYTHING</h2>
+                        <h3>All your questions answered</h3>
+                        <img src="view.jpg" alt="Man who points to the distance" class="chat-image">
+                        <h3>New produce is added continuously as time<br>goes by and the season change.</h3>
+                        <button class="button">Go to chat</button>
+                    </div>
+                </div>
+            </section> <!--/seasonal products-->
+
+            <section class="how-to">
+                <div class="info-layout">
+                    <div class="info-main">
+                        <h2>THIS IS HOW IT<br>WORKS</h2>
+                    </div>
+                    <div class="info-cards">
+                        <div class="order-groceries">
+                            <h3>ORDER GROCERIES</h3>
+                            <div class="order-groceries-texts">
+                                <p>Fram is a circular service that ensures your kitchen is always stocked with the essentials you need. Browse our seasonal selection, choose your items, and place your order online.</p>
+                                <p><a href="product.html">See our stock here.</a></p>
+                            </div>
+                        </div>
+                        <div class="stock-up">
+                            <h3>STOCK UP</h3>
+                            <p>Once your order arrives, unpack the produce and store it however it works best for you. Hold onto the containers—they’re yours to keep until your next order.</p>
+                        </div>
+                        <div class="scan-reorder">
+                            <h3>SCAN & REORDER</h3>
+                            <p>Ready for a refill? Grab the containers from your last order and scan the QR code with our app or your phone’s camera. This instantly adds the items back to your cart, making reordering a breeze.</p>
+                        </div>
+                        <div class="swap-reuse">
+                            <h3>SWAP & REUSE</h3>
+                            <p>When we deliver your new order, simply leave your empty containers outside. We’ll pick them up, clean them thoroughly, and reuse them for future deliveries.</p>
+                        </div>
+                    </div>
+                </div>
+            </section> <!--/how to-->
+
+            <section class="popular-produce-section">
+                <h2 class="popular-title">POPULAR PRODUCE</h2>
+                <div class="popular-cards-row">
+                    <div class="popular-card">
+                        <div class="popular-img-wrapper">
+                            <img src="Oats.jpg" alt="Oats closeup" class="popular-img">
+                            <button class="add-basket-btn">Add to basket &uarr;</button>
+                        </div>
+                        <div class="popular-info-row">
+                            <span class="popular-name">Oats</span>
+                            <span class="popular-price">48 kr/kg</span>
+                        </div>
+                        <div class="popular-kg">1 kg</div>
+                    </div>
+                    <div class="popular-card">
+                        <div class="popular-img-wrapper">
+                            <img src="Onions.jpg" alt="Onions closeup" class="popular-img">
+                            <button class="add-basket-btn">Add to basket &uarr;</button>
+                        </div>
+                        <div class="popular-info-row">
+                            <span class="popular-name">Red Onions</span>
+                            <span class="popular-price">48 kr/kg</span>
+                        </div>
+                        <div class="popular-kg">0.5 kg</div>
+                    </div>
+                    <div class="popular-card">
+                        <div class="popular-img-wrapper">
+                            <img src="Garlic.jpg" alt="Garlic closeup" class="popular-img">
+                            <button class="add-basket-btn">Add to basket &uarr;</button>
+                        </div>
+                        <div class="popular-info-row">
+                            <span class="popular-name">Garlic</span>
+                            <span class="popular-price">48 kr/kg</span>
+                        </div>
+                        <div class="popular-kg">0.2 kg</div>
+                    </div>
+                </div>
+            </section> <!-- /popular produce-->
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">FRAM</span>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <div class="newsletter-text">
+                    <h3>STAY UPDATED</h3>
+                    <p>Sign up for our newsletter to be the first to know about new produce or other exciting news!</p>
+                </div>
+                <form class="newsletter-form">
+                    <label>
+                        <input type="text" name="firstName" placeholder="First name" required>
+                    </label>
+                    <label>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </label>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    
+    <div id="ai-chatbot-popup" class="ai-chatbot-popup" style="display:none;">
+        <div class="ai-chatbot-header">
+            <button id="close-ai-chatbot" aria-label="Close chat">&times;</button>
+        </div>
+        <div class="ai-chatbot-body">
+            <div id="ai-chatbot-messages" class="ai-chatbot-messages">
+                <div class="ai-message ai-bot"><span class="ai-bot-name">FRAM</span> What can I help you with today?</div>
+            </div>
+            <form id="ai-chatbot-form" class="ai-chatbot-form" autocomplete="off">
+                <input type="text" id="ai-chatbot-input" placeholder="Type your question..." required />
+                <button type="submit">&uarr;</button>
+            </form>
+        </div>
+    </div> <!--/chatbot-popup-->
+
+    <script src="scripts/script.js" defer></script>
+</body>
+</html>

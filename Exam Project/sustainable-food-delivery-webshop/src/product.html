@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="styles.css">
+    <title>Fram - Products</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body class="product-page">
+    <header>
+        <nav>
+            <ul>
+                <li class="nav-menu">
+                    <a href="#" id="menu-toggle">
+                        <img src="menysmall.png" id="menu" alt="Menu">
+                    </a>
+                    <div id="dropdown-menu" class="dropdown-menu">
+                        <button class="close-btn" id="close-menu" aria-label="Close menu">&times;</button>
+                        <div class="dropdown-menu-links">
+                            <a href="product.html">PRODUCTS</a>
+                            <a href="chat.html">CHAT</a>
+                        </div>
+                        <a href="/cart" class="checkout-link">CHECKOUT</a>
+                    </div>
+                </li>
+                <li><a href="index.html" class="nav-logo">FRAM</a></li>
+                <li>
+                    <a href="/cart">
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="popular-produce-section">
+            <h2 class="popular-title">PRODUCE</h2>
+            <p class="popular-subtitle">Explore our selection of seasonal produce, sourced directly from local farms to ensure peak freshness and quality. Every item is chosen with care, supporting sustainable practices and bringing the best of the harvest to your table</p>
+            <div class="popular-cards-row">
+                
+                <div class="popular-card">
+                    <div class="popular-img-wrapper">
+                        <img src="Oats.jpg" alt="Oats closeup" class="popular-img">
+                        <button class="add-basket-btn">Add to basket &uarr;</button>
+                    </div>
+                    <div class="popular-info-row">
+                        <span class="popular-name">Oats</span>
+                        <span class="popular-price">48 kr/kg</span>
+                    </div>
+                    <div class="popular-kg">1 kg</div>
+                </div><!--/card oats-->
+
+                <div class="popular-card">
+                    <div class="popular-img-wrapper">
+                        <img src="Onions.jpg" alt="Onions closeup" class="popular-img">
+                        <button class="add-basket-btn">Add to basket &uarr;</button>
+                    </div>
+                    <div class="popular-info-row">
+                        <span class="popular-name">Red Onions</span>
+                        <span class="popular-price">48 kr/kg</span>
+                    </div>
+                    <div class="popular-kg">0.5 kg</div>
+                </div><!--/card red onions-->
+
+                <div class="popular-card">
+                    <div class="popular-img-wrapper">
+                        <img src="Garlic.jpg" alt="Garlic closeup" class="popular-img">
+                        <button class="add-basket-btn">Add to basket &uarr;</button>
+                    </div>
+                    <div class="popular-info-row">
+                        <span class="popular-name">Garlic</span>
+                        <span class="popular-price">48 kr/kg</span>
+                    </div>
+                    <div class="popular-kg">0.2 kg</div>
+                </div><!--/card garlic-->
+                
+                <div class="popular-card">
+                    <div class="popular-img-wrapper">
+                        <img src="Carrots.jpg" alt="Carrot closeup" class="popular-img">
+                        <button class="add-basket-btn">Add to basket &uarr;</button>
+                    </div>
+                    <div class="popular-info-row">
+                        <span class="popular-name">Carrot</span>
+                        <span class="popular-price">32 kr/kg</span>
+                    </div>
+                    <div class="popular-kg">1 kg</div>
+                </div> <!--/card carrot-->
+                
+                <div class="popular-card">
+                    <div class="popular-img-wrapper">
+                        <img src="Potatoes.jpg" alt="Potato closeup" class="popular-img">
+                        <button class="add-basket-btn">Add to basket &uarr;</button>
+                    </div>
+                    <div class="popular-info-row">
+                        <span class="popular-name">Potato</span>
+                        <span class="popular-price">48 kr/kg</span>
+                    </div>
+                    <div class="popular-kg">1 kg</div>
+                </div><!--/card potato-->
+
+            </div>
+        </section> <!-- /products-->
+
+        <section class="partner-locations-section">
+            <div class="partner-info">
+                <h2>Our Partners</h2>
+                <p>
+                    We work with local farmers and producers to bring you the freshest, most sustainable food. 
+                    Explore the map to see where our partners are located!
+                </p>
+            </div>
+            <div class="partner-map">
+                <div id="map"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">FRAM</span>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <div class="newsletter-text">
+                    <h3>STAY UPDATED</h3>
+                    <p>Sign up for our newsletter to be the first to know about new produce or other exciting news!</p>
+                </div>
+                <form class="newsletter-form">
+                    <label>
+                        <input type="text" name="firstName" placeholder="First name" required>
+                    </label>
+                    <label>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </label>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="scripts/script.js" defer></script>
+</body>
+</html>
